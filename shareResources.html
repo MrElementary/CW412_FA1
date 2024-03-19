@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Share Resources</title>
+    <link rel="stylesheet" href="shareResources.css">
+</head>
+<body>
+    <h1>Share Resources</h1>
+    <section id="upload-section">
+        <h2>Upload Resource</h2>
+        <input type="file" id="file-upload" accept=".pdf" />
+        <button onclick="uploadResource()">Upload</button>
+    </section>
+    <section id="download-section">
+        <h2>Download Resource</h2>
+        <button onclick="downloadResource('java-lecture-notes.pdf')">Download Java Lecture Notes</button>
+    </section>
+    <script src="shareResources.js"></script>
+</body>
+
+<footer>
+    <div class="footer-nav">
+        <a href="/home">Home</a>
+        <a href="/timetable">Timetable</a>
+        <a href="/discussion">Discussion</a>
+        <a href="/share-resources">Share Resources</a>
+        <a href="/about-us">About Us</a>
+        <a href="/contact-us">Contact Us</a>
+    </div>
+</footer>
+</html>
