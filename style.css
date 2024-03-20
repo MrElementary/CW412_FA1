@@ -17,21 +17,22 @@ body {
 	color: #F9FAF8;
 	background: linear-gradient(#93bbf3, #1F2937);
 	display: flex;
-	padding: 20px 0px 50px 100px;
+	padding: 10px 0px 50px 100px;
 }
 
 .top-links {
 	display: flex;
-	margin-left: auto;
+	margin-left: 0;
 	padding: 0px 100px 0px 0px;
 }
 
 .top-links a {
 	text-decoration: none;
 	color: #E5E7EB;
-	font-size: 18px;
-	padding: 10px;
-	font-weight: 900;
+	font-size: 15px;
+	padding:5px;
+	font-weight: 500;
+	margin-left: 0;
 }
 
 /*First Body Part*/
@@ -43,7 +44,7 @@ body {
 	color: #F9FAF8;
 	align-items: center;
 	justify-content: center;
-	padding: 90px;
+	padding: 10px;
 	padding-top: 50px;
 }
 
@@ -52,6 +53,7 @@ h1 {
 	font-weight: bold;
 	color: #F9FAF8;
 	margin: 0;
+	background-color: #1F2937;
 }
 
 #upload-section {
@@ -100,7 +102,6 @@ h1 {
     border-radius: 5px;
     cursor: pointer;
 }
-
 /* Second Body part*/
 
 .second-body {
@@ -137,6 +138,28 @@ h1 {
 	flex-direction: column;
 	background-color: #E5E7EB;
 	padding: 100px 200px;
+}
+
+.our-team-heading {
+	background-color: #93bbf3;
+    font-size: 36px; 
+    color: #333; 
+    text-align: left;
+    margin-bottom: 20px; 
+	padding: 15px;
+}
+
+.team-section h3 {
+	color: #333;
+	text-align: left;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.team-section p {
+	text-align: left;
+	padding: 10px;
 }
 
 /*Fourth Body*/
