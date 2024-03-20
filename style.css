@@ -54,6 +54,53 @@ h1 {
 	margin: 0;
 }
 
+#upload-section {
+    background-color: #93bbf3; 
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#upload-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+	text-align: left;
+}
+
+#upload-section button {
+    background-color: #1F2937; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Download Section Styles */
+#download-section {
+    background-color: #93bbf3; 
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#download-section h2 {
+    color: #333;
+	text-align: left;
+    margin-bottom: 15px;
+}
+
+#download-section button {
+    background-color: #1F2937; /* Blue background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* Second Body part*/
 
 .second-body {
