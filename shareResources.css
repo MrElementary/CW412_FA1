@@ -1,0 +1,84 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #F7EEDD;
+}
+
+/* Header styling */
+h1 {
+    color: white;
+    text-align-last: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:#008DDA;
+    padding: 10px;
+}
+
+/* Section styling */
+section {
+    background-color: #ACE2E1;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+}
+
+/* Input and button styling */
+input[type="file"] {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #41C9E2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    section {
+        width: 95%;
+    }
+}
+
+#download-section {
+    /* Other styles */
+    padding-bottom: 20px; /* Adds space at the bottom of the section */
+}
+
+footer {
+    background-color: #008DDA;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #f1c40f;
+}
