@@ -2,69 +2,72 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>CTU - Contact Us</title>
-	<link rel="stylesheet" href="style.css" media="all">
+    <meta charset="UTF-8">
+    <title>CTU - Contact Us</title>
+    <link rel="stylesheet" href="contact-us.css" media="all">
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 
 <body>
-	<div class="container">
+    <div class="container">
+        <nav class="header">
+            <div id="contact-home" class="home-link"><a href="Home Page.html">Home Page</a></div>
+            <div class="home-top-links">
+                <a href="#">Discussion</a>
+                <a href="#">Timetable</a>
+                <a href="#">Share Resources</a>
+                <a href="#">About Us</a>
+            </div>
+        </nav>
 
-		<nav class="header">
-			<div class="header-logo">
-			</div>
-			<div class="top-links">
-				<a href="#">First Page</a>
-				<a href="#">Second Page</a>
-				<a href="#">Third Page</a>
-			</div>
-		</nav>
+        <div class="first-body-contact">
+            <h1>Contact Us</h1>
+        </div>
 
+        <div class="third-body-contact">
+            <div class="contact-container">
+                <div class="contact-inner help-group">
+                    <label>What can we help you with?</label>
+                    <select class="contact-select">
+                        <option value="your_account___billing">Inquiries</option>
+                        <option value="your_account___billing">Suggestions</option>
+                        <option value="your_account___billing">Feedback</option>
+                    </select>
+                </div>
+                <div class="contact-inner name-group">
+                    <label>Your name:</label>
+                    <input placeholder="Example: Jan blohm">
+                </div>
+                <div class="contact-inner email-group">
+                    <label>Your Email Address:</label>
+                    <input placeholder="Example: Jan@blohm.co.za">
+                </div>
+                <div class="contact-inner subject-group">
+                    <label>Subject:</label>
+                    <input>
+                </div>
+                <div class="contact-inner details-group">
+                    <label>Details:</label>
+                    <textarea class="detail-input"
+                        placeholder="Please write your question or description of the problem you're trying to solve here."
+                        ></textarea>
+                </div>
+                <button type="submit" class="contact-inner contact-button">Submit</button>
+            </div>
 
-		<div class="first-body">
-			<h1>This is an H1 header to be filled with something</h1>
-		</div>
+            <div class="map">
+                <p class="map-text">Where to find us</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.630005609981!2d28.276517376183403!3d-25.782781846945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560bebcdcc3f5%3A0xd96e31d25d235cbc!2sCTU%20Training%20Solutions%20Menlyn%20Pretoria!5e0!3m2!1sen!2sza!4v1711191688843!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
 
-		<div class="second-body">
-			<h2>This is an H2 header to be filled with something</h2>
-			<div class="content-info">
-				<div>
-					<img>
-					<p>picture of something</p>
-				</div>
-
-				<div>
-					<img>
-					<p>picture of something</p>
-				</div>
-
-				<div>
-					<img>
-					<p>picture of something</p>
-				</div>
-
-				<div>
-					<img>
-					<p>picture of something</p>
-				</div>
-			</div>
-		</div>
-
-		<div class="third-body">
-            <h2>This is an H2 header to be filled with something</h1>
-		</div>
-
-		<div class="fourth-body">
-			<div class="fourth-body-block">
-				<h3>This is an H3 header to be filled with something</h3>
-				<p>Paragraph here</p>
-			</div>
-		</div>
-
-		<div class="footer">
-			<p>Copyright &copy; My home page</p>
-		</div>
-	</div>
+        <div class="footer">
+            <p>Copyright &copy; Contact Us</p>
+        </div>
+    </div>
 </body>
 
 </html>

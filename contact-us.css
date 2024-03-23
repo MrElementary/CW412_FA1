@@ -1,0 +1,114 @@
+.home-top-links {
+	display: flex;
+	padding: 20px 100px 10px 0px;
+}
+
+.home-top-links a {
+	text-decoration: none;
+	color: #E5E7EB;
+	font-size: 20px;
+	padding-right: 50px;
+	font-weight: 500;
+	margin-left: 0px;
+}
+
+.third-body-contact {
+    display: flex;
+	background-color: #e1f1fd;
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.contact-inner {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.contact-select {
+    padding: 5px 260px 5px 3px;
+    line-height: 1.5;
+    color: #5d6769;
+    border: 1px solid #bcc5c5;
+    border-radius: 1px;
+}
+
+select {
+    color: #000000; 
+    font-size: 16px; 
+  }
+
+input {
+    width: 370px;
+    height: 20px;
+}
+
+input:focus {
+    border-color: #005580; 
+    border-width: 2px; 
+    outline: none;
+}
+
+.detail-input {
+    text-align: left;
+    padding: 10px; 
+    width: 380px; 
+    height: 300px;
+    vertical-align: top; 
+    resize: none; 
+    line-height: 1.5; 
+    color: #000000; 
+    font-size: 16px; 
+    border-radius: 1px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+/* Style for when the textarea is focused */
+.detail-input:focus {
+    border-color: #005580; 
+    border-width: 2px; 
+    outline: none; 
+}
+
+.detail-input::placeholder {
+    color: #999; /* Placeholder text color */
+}
+
+.contact-button {
+    font-family: inherit;
+    font-size: 18px; /* Increase font size slightly */
+    padding: 10px 20px; /* Add padding to make the button slightly bigger */
+    background-color: #ffd262; /* Set background color */
+    color: #552600; /* Set text color */
+    border: 1px solid #e4b34f; /* Set border with thin border */
+    border-radius: 10px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer on hover */
+}
+
+.contact-button:hover {
+    background-color: #ffe99e; /* Change background color on hover */
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+.map-text {
+    font-size: 30px;
+}

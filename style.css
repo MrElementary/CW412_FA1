@@ -1,29 +1,37 @@
 body {
-	font-family: Roboto, sans-serif;
-	background-color: #FFFFFF;
+	font-family: "Nunito Sans", sans-serif;
+	background-color: #ffffff;
 	padding: 0;
 	margin: 0;
 	text-align: center;
 }
 
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Set the color to inherit from the parent */
+  }
+
 .container {
 	display: flex;
 	flex-direction: column;
+    height: 100vh;
 }
 
 /* header part */
 
 .header {
-	color: #F9FAF8;
+	color: #050400;
 	background: linear-gradient(#93bbf3, #1F2937);
 	display: flex;
-	padding: 10px 0px 50px 100px;
+	padding: 10px 0px 50px 10px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .top-links {
 	display: flex;
 	margin-left: 0;
-	padding: 0px 100px 0px 0px;
+	padding: 10px 100px 0px 0px;
 }
 
 .top-links a {
@@ -51,7 +59,7 @@ body {
 h1 {
 	font-size: 48px;
 	font-weight: bold;
-	color: #F9FAF8;
+	color: #f8faf8;
 	margin: 0;
 	background-color: #1F2937;
 }
@@ -134,10 +142,8 @@ h1 {
 
 /*Third Body*/
 .third-body {
-	display: flex;
-	flex-direction: column;
-	background-color: #E5E7EB;
-	padding: 100px 200px;
+	background-color: #e1f1fd;
+    flex-grow: 1;
 }
 
 .our-team-heading {
@@ -194,6 +200,11 @@ h3 {
 /*Footer*/
 
 .footer {
+    margin-top: auto;
 	background: #1F2937;
 	color: #fff;
+}
+
+.home-link {
+    font-size: 50px;
 }
