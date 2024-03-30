@@ -155,17 +155,30 @@ h1 {
 	padding: 15px;
 }
 
-.team-section h3 {
-	color: #333;
-	text-align: left;
-	font-family: serif;
-	font-weight: bold;
-	font-size: 25px;
-}
+.team-section {
+    
+    display: flex;
+    flex-direction: column;
 
-.team-section p {
-	text-align: left;
-	padding: 10px;
+    .team-member {
+        padding-bottom: 10px;
+        margin: 0px 0px 0px 50px;
+    }
+    
+    h3 {
+        color: #333;
+        text-align: left;
+        font-family: serif;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 5px;
+        text-decoration: underline;
+    }
+    p {
+        text-align: left;
+        padding: 10px;
+        width: 400px;
+    }
 }
 
 /*Fourth Body*/
@@ -191,11 +204,7 @@ h1 {
 	margin: 5px 30px 30px 50px;
 }
 
-h3 {
-	color: #fff;
-	padding: 0;
-	margin: 30px 0px 0px 50px;
-}
+
 
 /*Footer*/
 

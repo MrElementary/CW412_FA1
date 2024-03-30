@@ -4,12 +4,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>CTU - Discussions</title>
-	<link rel="stylesheet" href="style.css" media="all">
+	<link rel="stylesheet" href="/Stylesheets/discussions.css" media="all">
 </head>
 
 <body>
 	<nav class="header">
-		<img name="home-logo" src="ctu-no-background.png">
+		<img name="home-logo" src="/Images/ctu-no-background.png">
 		</div>
 		<div class="top-links">
 			<a href="#">Sign Up</a>
@@ -18,44 +18,82 @@
 		</div>
 	</nav>
 
+	<div class="wrapper">
 
-	<div class="first-body">
-		<h1>This is an H1 header to be filled with something</h1>
-	</div>
-
-	<div class="second-body">
-		<h2>This is an H2 header to be filled with something</h2>
-		<div class="content-info">
-			<div>
-				<img>
-				<p>picture of something</p>
-			</div>
-
-			<div>
-				<img>
-				<p>picture of something</p>
-			</div>
-
-			<div>
-				<img>
-				<p>picture of something</p>
-			</div>
-
-			<div>
-				<img>
-				<p>picture of something</p>
+		<div class="first-body">
+			<h1>Discussions</h1>
+		</div>
+		<div class="second-body">
+			<div class="content-info">
+				<div>
+					<img src="/Images/colab.jpg">
+					<p>Collaborate</p>
+				</div>
+				<div>
+					<img src="/Images/Question.jpg">
+					<p>Ask Questions</p>
+				</div>
+				<div>
+					<img src="/Images/Answer.png">
+					<p>Receive Answers</p>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="third-body">
-		<h2>This is an H2 header to be filled with something</h1>
-	</div>
+		<div class="third-body">
+			<div class="question-form">
+				<label for="question">Ask a question:</label>
+				<textarea id="question" name="question" placeholder="Type your question here..."></textarea>
+				<div class="submit-button">
+					<button type="submit">Submit</button>
+				</div>
+			</div>
 
-	<div class="fourth-body">
-		<div class="fourth-body-block">
-			<h3>This is an H3 header to be filled with something</h3>
-			<p>Paragraph here</p>
+			<div class="dis-sidebar">
+				<h2>Categories</h2>
+				<ul>
+					<li><a href="#">General</a></li>
+					<li><a href="#">PPD411</a></li>
+					<li><a href="#">DLP411</a></li>
+					<li><a href="#">CAF411</a></li>
+					<li><a href="#">PRP411</a></li>
+					<li><a href="#">RD412</a></li>
+					<li><a href="#">CWD412</a></li>
+					<li><a href="#">CF412</a></li>
+					<li><a href="#">ENA412</a></li>
+					<li><a href="#">Select All</a></li>
+				</ul>
+			</div>
+			
+			<div class="question-list">
+				<h2>Questions</h2>
+				<div class="question-block">
+					<div class="user-profile">
+						<div class="username">Wynand</div>
+						<div class="category">General</div>
+					</div>
+					<div class="question">Does anyone know when the Student Holiday is over?</div>
+					<button class="reply-button">Reply</button>
+				</div>
+				<div class="question-block">
+					<div class="user-profile">
+						<div class="username">Melanie</div>
+						<div class="category">RD412</div>
+					</div>
+					<div class="question">It seems that two questions are labeled as Question 3.2. Does anyone know whether we should leave it as is, or change the number format?</div>
+					<button class="reply-button">Reply</button>
+				</div>
+				<div class="question-block">
+					<div class="user-profile">
+						<div class="username">Wihan</div>
+						<div class="category">CWD412</div>
+					</div>
+					<div class="question">How many members are allowed in a team?
+						Are we limited to just 3 members?
+					</div>
+					<button class="reply-button">Reply</button>
+				</div>
+			</div>
 		</div>
 	</div>
 

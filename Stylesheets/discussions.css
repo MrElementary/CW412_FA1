@@ -1,0 +1,279 @@
+/*Discussion Page*/
+body {
+	font-family: "Nunito Sans", sans-serif;
+	background-color: #ffffff;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Set the color to inherit from the parent */
+  }
+
+.wrapper {
+min-height: 100%;
+}
+
+/* header part */
+
+.header {
+	color: #050400;
+	background: linear-gradient(#93bbf3, #1F2937);
+	display: flex;
+	padding: 10px 0px 50px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.top-links {
+	display: flex;
+	margin-left: 0;
+	padding: 10px 100px 0px 0px;
+}
+
+.top-links a {
+	text-decoration: none;
+	color: #E5E7EB;
+	font-size: 15px;
+	padding:5px;
+	font-weight: 500;
+	margin-left: 0;
+}
+
+/*First Body Part*/
+
+.first-body {
+	display: flex;
+	flex-direction: column;
+	background-color: #1F2937;
+	color: #F9FAF8;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	padding-top: 30px;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: #f8faf8;
+	margin: 0;
+	background-color: #1F2937;
+}
+
+/*Second Body*/
+
+.second-body {
+	align-items: center;
+}
+
+.content-info {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.content-info p{
+	margin-right: 5px;
+	max-width: 250px;
+	font-size: 20px;
+}
+
+.content-info img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border: 4px solid #3882F6;
+	border-radius: 15px;
+	margin: 5px 20px 0px 20px;
+}
+
+/*Third Body*/
+.third-body {
+	background-color: #e1f1fd;
+	flex-grow: 1;
+	margin-left: 0
+}
+
+
+/*Footer*/
+
+.footer {
+	background: #1F2937;
+	color: #fff;
+	margin-top: auto;
+	bottom: 0;
+}
+
+.home-link {
+    font-size: 50px;
+}
+
+/*Sidebar*/
+
+.dis-sidebar {
+    background-color: #93bbf3;
+    padding: 20px;
+    width: 200px;
+    height: auto;
+    overflow-y: auto;
+    border-radius: 5px;
+	margin-top: 75px;
+	margin-left: 20px;
+	position: absolute;
+}
+
+.dis-sidebar h2 {
+	margin-top: 0;
+}
+
+.dis-sidebar ul {
+	list-style-type: none;
+    padding: 0;
+}
+
+.dis-sidebar ul li {
+    margin-bottom: 15px;
+	text-align: left;
+	font-weight: bold;
+	padding-left: 10px;
+	background-image: linear-gradient(to bottom, rgb(221, 221, 223), #f3f3f3); 
+	background-size: 100% 120px;
+	background-repeat: no-repeat; 
+	border-radius: 3px;
+	box-shadow: 0 5px 7px -1px rgba(51, 51, 51, 0.23);
+	transition: transform .25s;
+}
+
+.dis-sidebar ul li:hover {
+transform: scale(1.1);
+}
+.dis-sidebar ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dis-sidebar ul li a:hover {
+    color: #000;
+}
+
+/*Question Form*/
+
+.question-form {
+    margin-top: 20px; 
+}
+
+.question-form label {
+    display: block;
+    margin-bottom: 5px;
+	padding-top: 5px;
+    font-weight: bold;
+	font-size: 18px;
+}
+
+.question-form input[type="text"],
+.question-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.question-form button[type="submit"] {
+    background-color: #1F2937;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+	position: absolute;
+	top: auto;
+	right: 5px;
+}
+
+.question-form button[type="submit"]:hover {
+    background-color: #0E1621;
+}
+
+.question-form input[type="text"]::placeholder,
+.question-form textarea::placeholder {
+    color: #999;
+}
+
+/*Question Form - This is purely for display purposes - Full functionality to be added*/
+
+.question-list {
+    margin-top: 40px;
+	margin-left: 240px;
+	flex-grow: 1;
+}
+
+.question-list h2 {
+    margin-bottom: 10px;
+}
+
+.question-block {
+	position: relative;
+    background-color: #c5daf7c5;
+    border: 5px solid #85b4f6c5;
+	border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+	width: 80%;
+	min-height: 150px;
+	overflow-wrap: break-word;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.question {
+	text-align: left;
+	text-indent: 150px;
+}
+
+.reply-button {
+    background-color: #1F2937;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+.reply-button:hover {
+    background-color: #0E1621;
+}
+
+.user-profile{
+	position: absolute;
+	top: 0;
+	left: 0px;
+	width: 130px;
+	height: 100%;
+	background-color: #85b4f6c5;
+	border-right: 1px solid #939292;
+	text-align: left;
+}
+
+.username {
+	margin: 5px 0;
+	padding-left: 7px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-weight: bold;
+}
+
+.category {
+	margin: 5px 0;
+	padding-left: 7px;
+	padding-bottom: 7px;
+}
