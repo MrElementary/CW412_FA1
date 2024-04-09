@@ -9,7 +9,7 @@ body {
 a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Set the color to inherit from the parent */
-  }
+}
 
 .container {
 	display: flex;
@@ -54,6 +54,15 @@ a {
 	justify-content: center;
 	padding: 10px;
 	padding-top: 50px;
+}
+
+.rotate {
+	animation: spin 2s linear;
+}
+
+@keyframes spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
 }
 
 h1 {
@@ -114,6 +123,10 @@ h1 {
 
 .second-body {
 	align-items: center;
+}
+
+.image-container:hover img{
+	transform: scale(1.2);
 }
 
 .second-body h2 {
