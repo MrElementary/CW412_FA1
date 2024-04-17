@@ -73,18 +73,37 @@ h1 {
 	background-color: #1F2937;
 }
 
+.upload-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+}
+
+#upload-image {
+	width: 20%; 
+	height: 80%; 
+	margin-right: 5px;
+	margin-top: 10px;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: #1F2937;
+}
+
 #upload-section {
+	align-items: center;
     background-color: #93bbf3; 
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
+    margin: 50px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	max-width: 1000px;
+	width: 100%;
 }
 
 #upload-section h2 {
     color: #333;
     margin-bottom: 15px;
-	text-align: left;
+	text-align: center;
 }
 
 #upload-section button {
@@ -94,30 +113,69 @@ h1 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+	margin-top: 10px; 
+    width: 100px; 
+    height: 40px; 
+    font-size: 20px; 
+    padding: 10px;
 }
 
+#upload-section input[type="file"] {
+	clear: both; 
+    margin-top: 30px; 
+    width: 250px; 
+    height: 30px; 
+    font-size: 18px; 
+    padding: 20px;
+	margin-bottom: 10px;
+}
+
+
 /* Download Section Styles */
+.download-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+}
+
+
 #download-section {
+	align-items: center;
     background-color: #93bbf3; 
     padding: 20px;
-    margin: 20px 0px;
-    border-radius: 8px;
+    margin: 50px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	max-width: 1000px;
+	width:100%;
+}
+
+#download-image {
+	width: 20%; 
+	height: 80%; 
+	margin-right: 5px;
+	margin-top: 5px;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: #1F2937;
 }
 
 #download-section h2 {
     color: #333;
-	text-align: left;
+	text-align: center;
     margin-bottom: 15px;
+	width:100%;
 }
 
 #download-section button {
-    background-color: #1F2937; /* Blue background */
+    background-color: #1F2937;
     color: white;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+	font-size: 20px;
+	margin-top: 25px;
 }
 /* Second Body part*/
 
@@ -159,6 +217,30 @@ h1 {
     flex-grow: 1;
 }
 
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-CTU,
+.about-CTU-buddy {
+    flex: 1; 
+    padding: 20px; 
+    margin: 10px; 
+    background-color: #1F2937; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+	color: #e1f1fd;
+	font-family:'Lucida Sans';
+}
+
+.about-section p {
+	background-color: #1F2937;
+	color: #e1f1fd;
+	padding: 50px;
+}
+
 .our-team-heading {
 	background-color: #93bbf3;
     font-size: 36px; 
@@ -166,32 +248,64 @@ h1 {
     text-align: left;
     margin-bottom: 20px; 
 	padding: 15px;
+	width: 100%;
 }
 
 .team-section {
-    
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; 
+}
 
-    .team-member {
-        padding-bottom: 10px;
-        margin: 0px 0px 0px 50px;
-    }
-    
-    h3 {
-        color: #333;
-        text-align: left;
-        font-family: serif;
-        font-weight: bold;
-        font-size: 25px;
-        margin: 5px;
-        text-decoration: underline;
-    }
-    p {
-        text-align: left;
-        padding: 10px;
-        width: 400px;
-    }
+.team-section .team-member {
+    background-color: #1F2937;
+	color:#e1f1fd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 15px;
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+	position: relative;
+}
+
+.team-member-image {
+    position: absolute;
+    width: auto;
+	height: 105%;
+	border: solid #93bbf3;
+    right: 0;
+    top: 0; 
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px); 
+    visibility: hidden; 
+}
+
+.team-member:hover .team-member-image {
+    opacity: 1;
+    transform: translateY(0); 
+    visibility: visible;
+}
+
+.team-member:hover {
+    transform: rotate(0deg) translateY(-10px);
+}
+
+.team-section h3 {
+    color: #e1f1fd;
+    text-align: left;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 5px;
+    text-decoration: underline;
+}
+
+.team-section p {
+    text-align: left;
+    padding: 10px;
+    width: 400px;
 }
 
 /*Fourth Body*/

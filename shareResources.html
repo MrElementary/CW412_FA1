@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Share Resources</title>
     <link rel="stylesheet" href="Stylesheets/style.css">
-</head>
+   </head>
 
 <body>
     <div class="container">
@@ -24,16 +24,27 @@
         <p>This platform allows you to upload and download educational resources, making knowledge sharing easy and
             accessible.</p>
 
-        <section id="upload-section">
-            <h2>Upload Resource</h2>
-            <input type="file" id="file-upload" accept=".pdf" />
-            <button onclick="uploadResource()">Upload</button>
-        </section>
+        <div class="upload-container">
+            <img id="upload-image"src="Images/upload.jpg">
+            <section id="upload-section">
+                <h2>Upload Resources</h2>
+                <input type="file" id="file-upload" accept=".pdf" />
+                <button onclick="uploadResource()">Upload</button>
+            </section>
+        </div>    
 
-        <section id="download-section">
-            <h2>Download Resource</h2>
-            <button onclick="downloadResource('java-lecture-notes.pdf')">Download Java Lecture Notes</button>
-        </section>
+        <div class="download-container">
+            <img id="download-image" src="Images/download.jpg">
+            <section id="download-section">
+                <h2>Download Resources</h2>
+                <button onclick="openResource('LectureNotes')">Open Lecture Notes</button>
+                <button onclick="downloadResource('LectureNotes')">Download Lecture Notes</button>
+            </section>
+        </div>
+
+        <div class="third-body">
+            <h2>"Education is the passport to the future, for tomorrow belongs to those who prepare for it today!"</h1>
+        </div>
 
         <script src="shareResources.js"></script>
         <div class="footer">
