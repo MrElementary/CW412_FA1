@@ -1,20 +1,20 @@
 .home-top-links {
-	display: flex;
-	padding: 20px 100px 10px 0px;
+    display: flex;
+    padding: 20px 100px 10px 0px;
 }
 
 .home-top-links a {
-	text-decoration: none;
-	color: #E5E7EB;
-	font-size: 20px;
-	padding-right: 50px;
-	font-weight: 500;
-	margin-left: 0px;
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 20px;
+    padding-right: 50px;
+    font-weight: 500;
+    margin-left: 0px;
 }
 
 .third-body-contact {
     display: flex;
-	background-color: #e1f1fd;
+    background-color: #e1f1fd;
     flex-grow: 1;
     justify-content: space-evenly;
 }
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+
 }
 
 .contact-select {
@@ -45,9 +45,9 @@
 }
 
 select {
-    color: #000000; 
-    font-size: 16px; 
-  }
+    color: #000000;
+    font-size: 16px;
+}
 
 input {
     width: 370px;
@@ -55,21 +55,21 @@ input {
 }
 
 input:focus {
-    border-color: #005580; 
-    border-width: 2px; 
+    border-color: #005580;
+    border-width: 2px;
     outline: none;
 }
 
 .detail-input {
     text-align: left;
-    padding: 10px; 
-    width: 380px; 
+    padding: 10px;
+    width: 380px;
     height: 300px;
-    vertical-align: top; 
-    resize: none; 
-    line-height: 1.5; 
-    color: #000000; 
-    font-size: 16px; 
+    vertical-align: top;
+    resize: none;
+    line-height: 1.5;
+    color: #000000;
+    font-size: 16px;
     border-radius: 1px;
     font-family: inherit;
     box-sizing: border-box;
@@ -77,28 +77,37 @@ input:focus {
 
 /* Style for when the textarea is focused */
 .detail-input:focus {
-    border-color: #005580; 
-    border-width: 2px; 
-    outline: none; 
+    border-color: #005580;
+    border-width: 2px;
+    outline: none;
 }
 
 .detail-input::placeholder {
-    color: #999; /* Placeholder text color */
+    color: #999;
+    /* Placeholder text color */
 }
 
 .contact-button {
     font-family: inherit;
-    font-size: 18px; /* Increase font size slightly */
-    padding: 10px 20px; /* Add padding to make the button slightly bigger */
-    background-color: #ffd262; /* Set background color */
-    color: #552600; /* Set text color */
-    border: 1px solid #e4b34f; /* Set border with thin border */
-    border-radius: 10px; /* Add border radius */
-    cursor: pointer; /* Add cursor pointer on hover */
+    font-size: 18px;
+    /* Increase font size slightly */
+    padding: 10px 20px;
+    /* Add padding to make the button slightly bigger */
+    background-color: #ffd262;
+    /* Set background color */
+    color: #552600;
+    /* Set text color */
+    border: 1px solid #e4b34f;
+    /* Set border with thin border */
+    border-radius: 10px;
+    /* Add border radius */
+    cursor: pointer;
+    /* Add cursor pointer on hover */
 }
 
 .contact-button:hover {
-    background-color: #ffe99e; /* Change background color on hover */
+    background-color: #ffe99e;
+    /* Change background color on hover */
 }
 
 .map {
@@ -111,4 +120,51 @@ input:focus {
 
 .map-text {
     font-size: 30px;
+}
+
+.group-details-container {
+    padding: 20px;
+    background: linear-gradient(#e1f1fd, #93bbf3);
+}
+
+.group-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(#e1f1fd, #93bbf3);
+    border: 2px dashed black;
+    border-radius: 20px;
+    padding: 20px;
+    width: calc(100% - 40px);
+
+    padding-top: 0px;
+}
+
+.group-details> :first-child {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.outer-details-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.inner-details-one {
+    margin-left: 20%;
+  }
+
+.inner-details-two {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.member-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
