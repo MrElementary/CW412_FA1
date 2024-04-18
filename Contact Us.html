@@ -6,6 +6,7 @@
     <title>CTU - Contact Us</title>
     <link rel="stylesheet" href="Stylesheets/contact-us.css" media="all">
     <link rel="stylesheet" href="Stylesheets/style.css" media="all">
+    <script src="contactus-logic.js"></script>
 </head>
 
 <body>
@@ -28,9 +29,9 @@
                 <div class="contact-inner help-group">
                     <label>What can we help you with?</label>
                     <select class="contact-select">
-                        <option value="your_account___billing">Inquiries</option>
-                        <option value="your_account___billing">Suggestions</option>
-                        <option value="your_account___billing">Feedback</option>
+                        <option value="Inquiries">Inquiries</option>
+                        <option value="Suggestions">Suggestions</option>
+                        <option value="Feedback">Feedback</option>
                     </select>
                 </div>
                 <div class="contact-inner name-group">
@@ -81,6 +82,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-message"></p>
             </div>
         </div>
 

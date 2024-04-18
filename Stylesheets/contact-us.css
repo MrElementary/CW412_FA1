@@ -136,7 +136,6 @@ input:focus {
     border-radius: 20px;
     padding: 20px;
     width: calc(100% - 40px);
-
     padding-top: 0px;
 }
 
@@ -168,3 +167,55 @@ input:focus {
     flex-direction: column;
     align-items: start;
 }
+
+.group-details {
+    outline: 10px dashed #E0E4CC;
+    box-shadow: 0 0 0 10px #69D2E7;
+    animation: 1s animateBorderOne ease infinite;
+  }
+  
+  @keyframes animateBorderOne {
+    to {
+      outline-color: #69D2E7;
+      box-shadow: 0 0 0 10px #E0E4CC;
+    }
+  }
+
+  /* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px; /* Limit width */
+    border-radius: 8px;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
