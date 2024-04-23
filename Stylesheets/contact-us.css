@@ -140,7 +140,7 @@ input:focus {
 }
 
 .group-details> :first-child {
-    margin-left: auto;
+    margin-left: 40%;
     margin-right: auto;
 }
 
@@ -151,12 +151,19 @@ input:focus {
 }
 
 .inner-details-one {
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
-.inner-details-two {
-    margin-left: 20%;
+.inner-details-three {
+    margin-left: 5%;
     margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.inner-details-two {
+    margin-left: 5%;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -176,8 +183,8 @@ input:focus {
   
   @keyframes animateBorderOne {
     to {
-      outline-color: #69D2E7;
-      box-shadow: 0 0 0 10px #E0E4CC;
+      outline-color: #f32400;
+      box-shadow: 0 0 0 10px #f0d802;
     }
   }
 

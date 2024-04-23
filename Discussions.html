@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<title>CTU - Discussions</title>
 	<link rel="stylesheet" href="Stylesheets/discussions.css" media="all">
+    <script src="/Scripts/discussion.js"></script>
 </head>
 
 <body>
@@ -26,15 +27,15 @@
 		<div class="second-body">
 			<div class="content-info">
 				<div>
-					<img src="Images/colab.jpg">
+					<img class="inner-images" src="Images/colab.jpg">
 					<p>Collaborate</p>
 				</div>
 				<div>
-					<img src="Images/Question.jpg">
+					<img class="inner-images" src="Images/Question.jpg">
 					<p>Ask Questions</p>
 				</div>
 				<div>
-					<img src="Images/Answer.png">
+					<img class="inner-images" src="Images/Answer.png">
 					<p>Receive Answers</p>
 				</div>
 			</div>
@@ -43,9 +44,9 @@
 		<div class="third-body">
 			<div class="question-form">
 				<label for="question">Ask a question:</label>
-				<textarea id="question" name="question" placeholder="Type your question here..."></textarea>
-				<div class="submit-button">
-					<button type="submit">Submit</button>
+				<textarea id="question" class="question-text" placeholder="Type your question here..."></textarea>
+				<div>
+					<button type="submit" id="myButton" class="submit-button">Submit</button>
 				</div>
 			</div>
 
@@ -97,6 +98,13 @@
 		</div>
 	</div>
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
 	<div class="footer">
 		<a style="color: white" href="Home Page.html">Home | </a>
 		<a style="color: white" href="Timetable.html">Timetable | </a>
@@ -105,6 +113,7 @@
 		<a style="color: white" href="About Us.html">About Us | </a>
 		<a style="color: white" href="Contact Us.html">Contact Us | </a>
 	</div>
+
 </body>
 
 </html>
