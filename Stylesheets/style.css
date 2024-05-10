@@ -88,6 +88,11 @@ h1 {
 	border-radius: 8px;
 	border-style: solid;
 	border-color: #1F2937;
+	transition: transform 0.3s ease; 
+}
+
+#upload-image:hover {
+    transform: rotate(5deg); 
 }
 
 #upload-section {
@@ -104,6 +109,10 @@ h1 {
     color: #333;
     margin-bottom: 15px;
 	text-align: center;
+	font-family: serif;
+	font-size: xx-large;
+	background-color: white;
+	padding: 10px;
 }
 
 #upload-section button {
@@ -118,6 +127,11 @@ h1 {
     height: 40px; 
     font-size: 20px; 
     padding: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+#upload-section button:hover {
+    background-color: #4B5563;
 }
 
 #upload-section input[type="file"] {
@@ -158,13 +172,21 @@ h1 {
 	border-radius: 8px;
 	border-style: solid;
 	border-color: #1F2937;
+	transition: transform 0.3s ease; 
 }
 
+#download-image:hover {
+    transform: rotate(5deg); 
+}
 #download-section h2 {
     color: #333;
 	text-align: center;
     margin-bottom: 15px;
 	width:100%;
+	font-family: serif;
+	font-size: xx-large;
+	background-color: white;
+	padding: 10px;
 }
 
 #download-section button {
@@ -233,6 +255,12 @@ h1 {
     border-radius: 8px; 
 	color: #e1f1fd;
 	font-family:'Lucida Sans';
+	transition: transform 0.3s ease; 
+}
+
+.about-CTU:hover,
+.about-CTU-buddy:hover {
+    transform: rotate(2deg); 
 }
 
 .about-section p {
@@ -251,61 +279,86 @@ h1 {
 	width: 100%;
 }
 
-.team-section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; 
+*About us Table*/
+
+.content-container {
+	width: 100%;
+	padding: 50px;
+	box-sizing: border-box;
 }
 
-.team-section .team-member {
+.about-us table {
+    width: 50%;
+    border-collapse: separate;
+}
+
+.about-us td {
     background-color: #1F2937;
-	color:#e1f1fd;
+    color: #e1f1fd;
+	border-color: #93bbf3;
     border-radius: 10px;
+	border-width: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     margin: 15px;
-    padding: 15px;
-    transform: rotate(-1deg);
-    transition: transform 0.3s ease;
-	position: relative;
-}
-
-.team-member-image {
-    position: absolute;
-    width: auto;
-	height: 105%;
-	border: solid #93bbf3;
-    right: 0;
-    top: 0; 
-    opacity: 0;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateY(-10px); 
-    visibility: hidden; 
-}
-
-.team-member:hover .team-member-image {
-    opacity: 1;
-    transform: translateY(0); 
-    visibility: visible;
-}
-
-.team-member:hover {
-    transform: rotate(0deg) translateY(-10px);
-}
-
-.team-section h3 {
-    color: #e1f1fd;
-    text-align: left;
-    font-family: serif;
-    font-weight: bold;
-    font-size: 25px;
-    margin: 5px;
-    text-decoration: underline;
-}
-
-.team-section p {
-    text-align: left;
     padding: 10px;
-    width: 400px;
+    position: relative;
+    overflow: hidden;
+	vertical-align: top;
+}
+
+.wihan-image {
+    width: 250px;  
+    height: auto;
+    border: solid #93bbf3;
+    opacity: 1; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+	margin-top: 40px;
+}
+
+.zander-image {
+    width: 200px;  
+    height: auto;
+    border: solid #93bbf3;
+    opacity: 1; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.wynand-image {
+    width: 225px;  
+    height: auto;
+    border: solid #93bbf3;
+    opacity: 1; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+	margin-top: 30px;
+}
+
+.melanie-image {
+    width: 225px;  
+    height: auto;
+    border: solid #93bbf3;
+    opacity: 1; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+.about-us h3 {
+	color: #e1f1fd;
+	text-align: center;
+	font-family: serif;
+	font-weight: bold;
+	margin-top: 0;
+	font-size: 35px;
+	margin: 5px;
+}
+.about-us p {
+	text-align: left;
+	padding: 10px;
 }
 
 /*Fourth Body*/
