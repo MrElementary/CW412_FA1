@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Dynamic Backend Page</title>
     <link rel="stylesheet" href="Stylesheets/backend.css" media="all">
+    <script src="Scripts/backend.js"></script>
 </head>
 
 <body>
@@ -16,13 +17,17 @@
                 <a href="#">Log In</a>
                 <a href="#">Support</a>
             </div>
+            <button type="submit" class="clearButton">Clear Storage and return</button>
         </nav>
 
         <div class="first-body">
-            <div class="first-body-space"></div>
         </div>
 
-        <div class="group-details-container">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modal-message"></p>
+            </div>
         </div>
 
         <div class="footer">

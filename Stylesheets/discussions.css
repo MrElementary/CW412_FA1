@@ -338,10 +338,12 @@ h1 {
 
 .username {
     margin: 5px 0;
-    padding-left: 7px;
+    padding-left: 10px;
+    text-align: center;
     padding-top: 7px;
     padding-bottom: 7px;
     font-weight: bold;
+    line-height: 10;
 }
 
 .category {

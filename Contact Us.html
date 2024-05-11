@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="Stylesheets/contact-us.css" media="all">
     <link rel="stylesheet" href="Stylesheets/style.css" media="all">
     <script src="Scripts/contactus-logic.js"></script>
-</head>
-
 <body>
     <div class="container">
         <nav class="header">
@@ -53,7 +51,7 @@
                 </div>
                 <div>
                     <button type="submit" class="contact-inner contact-button">Submit</button>
-                    <button type="submit" class="contact-inner view-submissions-button">View Submissions</button>
+                    <button type="submit" class="contact-inner view-submissions-button" onclick="location.href='backendDisplay.html?page=one'">View Submissions</button>
                 </div>
             </div>
 
@@ -76,7 +74,7 @@
                         <p>Web Wizards</p>
                     </div>
                     <div class="inner-details-two">
-                        <img src="Images/web-wizard.png">
+                        <img onclick="clearAllDb()" src="Images/web-wizard.png">
                     </div>
                     <div class="inner-details-three">
                         <h3>Individual details:</h3>
