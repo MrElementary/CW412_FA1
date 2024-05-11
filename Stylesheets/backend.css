@@ -1,0 +1,50 @@
+body {
+	font-family: "Nunito Sans", sans-serif;
+	margin: 0;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Set the color to inherit from the parent */
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+    height: 100vh;
+}
+
+/* header part */
+
+.header {
+	background: linear-gradient(#93bbf3, #1F2937);
+	padding: 10px 0px 50px 10px;
+}
+
+.top-links {
+	padding: 15px 100px 0px 0px;
+}
+
+.top-links a {
+	color: #E5E7EB;
+	font-size: 15px;
+	padding:5px;
+}
+
+/*Third Body*/
+.first-body {
+	background-color: #e1f1fd;
+    flex-grow: 1;
+}
+
+/*Footer*/
+.footer {
+    margin-top: auto;
+	background: #1F2937;
+	color: #fff;
+    text-align: center;
+}
+
+.footer-info {
+    padding-top: 15px;
+}

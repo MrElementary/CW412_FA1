@@ -105,7 +105,30 @@ input:focus {
     /* Add cursor pointer on hover */
 }
 
+.view-submissions-button {
+    font-family: inherit;
+    font-size: 18px;
+    /* Increase font size slightly */
+    padding: 10px 20px;
+    /* Add padding to make the button slightly bigger */
+    background-color: #ffd262;
+    /* Set background color */
+    color: #552600;
+    /* Set text color */
+    border: 1px solid #e4b34f;
+    /* Set border with thin border */
+    border-radius: 10px;
+    /* Add border radius */
+    cursor: pointer;
+    /* Add cursor pointer on hover */
+}
+
 .contact-button:hover {
+    background-color: #ffe99e;
+    /* Change background color on hover */
+}
+
+.view-submissions-button:hover {
     background-color: #ffe99e;
     /* Change background color on hover */
 }

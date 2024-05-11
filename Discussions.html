@@ -2,101 +2,112 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>CTU - Discussions</title>
-	<link rel="stylesheet" href="Stylesheets/discussions.css" media="all">
+    <meta charset="UTF-8">
+    <title>CTU - Discussions</title>
+    <link rel="stylesheet" href="Stylesheets/discussions.css" media="all">
     <script src="Scripts/discussion.js"></script>
 </head>
 
 <body>
-	<nav class="header">
-		<img name="home-logo" src="Images/ctu-no-background.png">
-		</div>
-		<div class="top-links">
-			<a href="#">Sign Up</a>
-			<a href="#">Log In</a>
-			<a href="#">Support</a>
-		</div>
-	</nav>
+    <nav class="header">
+        <img name="home-logo" src="Images/ctu-no-background.png">
+        </div>
+        <div class="top-links">
+            <a href="#">Sign Up</a>
+            <a href="#">Log In</a>
+            <a href="#">Support</a>
+        </div>
+    </nav>
 
-	<div class="wrapper">
+    <div class="wrapper">
 
-		<div class="first-body">
-			<h1>Discussions</h1>
-		</div>
-		<div class="second-body">
-			<div class="content-info">
-				<div>
-					<img class="inner-images" src="Images/colab.jpg">
-					<p>Collaborate</p>
-				</div>
-				<div>
-					<img class="inner-images" src="Images/Question.jpg">
-					<p>Ask Questions</p>
-				</div>
-				<div>
-					<img class="inner-images" src="Images/Answer.png">
-					<p>Receive Answers</p>
-				</div>
-			</div>
-		</div>
+        <div class="first-body">
+            <h1>Discussions</h1>
+        </div>
+        <div class="second-body">
+            <div class="content-info">
+                <div>
+                    <img class="inner-images" src="Images/colab.jpg">
+                    <p>Collaborate</p>
+                </div>
+                <div>
+                    <img class="inner-images" src="Images/Question.jpg">
+                    <p>Ask Questions</p>
+                </div>
+                <div>
+                    <img class="inner-images" src="Images/Answer.png">
+                    <p>Receive Answers</p>
+                </div>
+            </div>
+        </div>
 
-		<div class="third-body">
-			<div class="question-form">
-				<label for="question">Ask a question:</label>
-				<textarea id="question" class="question-text" placeholder="Type your question here..."></textarea>
-				<div>
-					<button type="submit" id="myButton" class="submit-button">Submit</button>
-				</div>
-			</div>
+        <div class="third-body">
+            <div class="question-form">
+                <div class="combined-blocks">
+                    <div class="question-block-one">
+                        <label for="question">Enter your name:</label>
+                        <textarea class="question-text java-name" placeholder="Please provide your name"></textarea>
+                    </div>
+                    <div class="question-block-two">
+                        <label for="question">Ask a question:</label>
+                        <textarea id="question" class="question-text java-question"
+                            placeholder="Type your question here..."></textarea>
+                        <div>
+                            <button type="submit" id="myButton" class="submit-button">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="view-questions-button">View Submissions</button>
+            </div>
 
-			<div class="dis-sidebar">
-				<h2>Categories</h2>
-				<ul>
-					<li><a href="#">General</a></li>
-					<li><a href="#">PPD411</a></li>
-					<li><a href="#">DLP411</a></li>
-					<li><a href="#">CAF411</a></li>
-					<li><a href="#">PRP411</a></li>
-					<li><a href="#">RD412</a></li>
-					<li><a href="#">CWD412</a></li>
-					<li><a href="#">CF412</a></li>
-					<li><a href="#">ENA412</a></li>
-					<li><a href="#">Select All</a></li>
-				</ul>
-			</div>
-			
-			<div class="question-list">
-				<h2>Questions</h2>
-				<div class="question-block">
-					<div class="user-profile">
-						<div class="username">Wynand</div>
-						<div class="category">General</div>
-					</div>
-					<div class="question">Does anyone know when the Student Holiday is over?</div>
-					<button class="reply-button">Reply</button>
-				</div>
-				<div class="question-block">
-					<div class="user-profile">
-						<div class="username">Melanie</div>
-						<div class="category">RD412</div>
-					</div>
-					<div class="question">It seems that two questions are labeled as Question 3.2. Does anyone know whether we should leave it as is, or change the number format?</div>
-					<button class="reply-button">Reply</button>
-				</div>
-				<div class="question-block">
-					<div class="user-profile">
-						<div class="username">Wihan</div>
-						<div class="category">CWD412</div>
-					</div>
-					<div class="question">How many members are allowed in a team?
-						Are we limited to just 3 members?
-					</div>
-					<button class="reply-button">Reply</button>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="dis-sidebar">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">General</a></li>
+                    <li><a href="#">PPD411</a></li>
+                    <li><a href="#">DLP411</a></li>
+                    <li><a href="#">CAF411</a></li>
+                    <li><a href="#">PRP411</a></li>
+                    <li><a href="#">RD412</a></li>
+                    <li><a href="#">CWD412</a></li>
+                    <li><a href="#">CF412</a></li>
+                    <li><a href="#">ENA412</a></li>
+                    <li><a href="#">Select All</a></li>
+                </ul>
+            </div>
+
+            <div class="question-list">
+                <h2>Most recent submissions:</h2>
+                <div class="question-block">
+                    <div class="user-profile">
+                        <div class="username">Wynand</div>
+                        <div class="category">General</div>
+                    </div>
+                    <p class="question">Does anyone know when the Student Holiday is over?</p>
+                    <button class="reply-button">Reply</button>
+                </div>
+                <div class="question-block">
+                    <div class="user-profile">
+                        <div class="username">Melanie</div>
+                        <div class="category">RD412</div>
+                    </div>
+                    <p class="question">It seems that two questions are labeled as Question 3.2. Does anyone know
+                        whether we should leave it as is, or change the number format?</p>
+                    <button class="reply-button">Reply</button>
+                </div>
+                <div class="question-block">
+                    <div class="user-profile">
+                        <div class="username">Wihan</div>
+                        <div class="category">CWD412</div>
+                    </div>
+                    <p class="question">How many members are allowed in a team?
+                        Are we limited to just 3 members?
+                    </p>
+                    <button class="reply-button">Reply</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -105,14 +116,19 @@
         </div>
     </div>
 
-	<div class="footer">
-		<a style="color: white" href="Home Page.html">Home | </a>
-		<a style="color: white" href="Timetable.html">Timetable | </a>
-		<a style="color: white" href="Discussions.html">Discussion | </a>
-		<a style="color: white" href="shareResources.html">Share Resources | </a>
-		<a style="color: white" href="About Us.html">About Us | </a>
-		<a style="color: white" href="Contact Us.html">Contact Us | </a>
-	</div>
+    <div class="footer">
+        <div class="footer-links">
+            <a style="color: white" href="Home Page.html">Home | </a>
+            <a style="color: white" href="Timetable.html">Timetable | </a>
+            <a style="color: white" href="Discussions.html">Discussion | </a>
+            <a style="color: white" href="shareResources.html">Share Resources | </a>
+            <a style="color: white" href="About Us.html">About Us | </a>
+            <a style="color: white" href="Contact Us.html">Contact Us | </a>
+        </div>
+        <div class="footer-info">
+            <a>Web Wizards &copy; 2024</a>
+        </div>
+    </div>
 
 </body>
 
