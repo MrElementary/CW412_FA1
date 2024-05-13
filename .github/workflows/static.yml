@@ -38,14 +38,14 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const octokit = @octokit/rest();
+            const octokit = require('@octokit/rest')();
             octokit.repos.updatePagesSite({
-              owner: "${GITHUB_REPOSITORY_OWNER}",
-              repo: "${GITHUB_REPOSITORY_NAME}",
-              cname: "",
+              owner: '${GITHUB_REPOSITORY_OWNER}',
+              repo: '${GITHUB_REPOSITORY_NAME}',
+              cname: '',
               source: {
-                branch: "${GITHUB_REF_NAME}",
-                directory: "/",
+                branch: '${GITHUB_REF_NAME}',
+                directory: '/',
                 homepage: "Home Page.html"
               }
             })
