@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 console.log(file.name, file.type);
                 store.add(fileData, file.name);
+                alert("File has been successfully uploaded!");
+                document.getElementById('file-upload').value = '';
             }
         } else {
             alert("No file selected for upload.");
