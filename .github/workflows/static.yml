@@ -40,7 +40,4 @@ jobs:
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/github-pages@v2  # Update this line
-        with:
-          html_url: 'Home Page.html'  # Add this line
-          token: ${{ secrets.GITHUB_TOKEN }}  # Add this line
+        uses: actions/deploy-pages@v4
