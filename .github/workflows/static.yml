@@ -33,11 +33,21 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Create metadata file
-        uses: actions/create-pages-metadata@v3
+      - name: Set homepage metadata
+        uses: actions/github-script@v6
         with:
-          # Set the homepage to "Home Page.html"
-          homepage: 'Home Page.html'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.pages.update({
+              "owner": "${GITHUB_REPOSITORY_OWNER}",
+              "repo": "${GITHUB_REPOSITORY_NAME}",
+              "cname": "",
+              "source": {
+                "branch": "${GITHUB_REF_NAME}",
+                "directory": "/",
+                "homepage": "Home Page.html"
+              }
+            })
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
