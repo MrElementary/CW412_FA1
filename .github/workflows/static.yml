@@ -38,14 +38,15 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.pages.update({
-              "owner": "${GITHUB_REPOSITORY_OWNER}",
-              "repo": "${GITHUB_REPOSITORY_NAME}",
-              "cname": "",
-              "source": {
-                "branch": "${GITHUB_REF_NAME}",
-                "directory": "/",
-                "homepage": "Home Page.html"
+            const octokit = @octokit/rest();
+            octokit.repos.updatePagesSite({
+              owner: "${GITHUB_REPOSITORY_OWNER}",
+              repo: "${GITHUB_REPOSITORY_NAME}",
+              cname: "",
+              source: {
+                branch: "${GITHUB_REF_NAME}",
+                directory: "/",
+                homepage: "Home Page.html"
               }
             })
       - name: Upload artifact
