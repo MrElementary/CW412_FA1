@@ -6,38 +6,43 @@ document.addEventListener("DOMContentLoaded", function () {
     uploadButton.addEventListener('click', () => {
         const file = fileInput.files[0];
 
+
         if (file) {
-            console.log("Uploading file:", file.name);
 
-            const dbName = 'myDB';
-            const dbVersion = 11;
-            const storeName = 'files';
+            // Creating a reader to store pdf as array and not blobs
+            const reader = new FileReader();
+            reader.readAsArrayBuffer(file);
 
-            const request = window.indexedDB.open(dbName, dbVersion);
+            reader.onload = () => {
 
-            request.onupgradeneeded = (event) => {
-                const db = event.target.result;
-                console.log("Object store 'files' created");
-                db.createObjectStore(storeName);
-            };
+                const arrayBuffer = reader.result;
 
-            request.onsuccess = () => {
-                const db = request.result;
-                const tx = db.transaction(storeName, 'readwrite');
-                const store = tx.objectStore(storeName);
-                console.log("Transaction and object store accessed successfully");
+                console.log("Uploading file:", file.name);
 
-                const fileBlob = new Blob([file], { type: file.type });
-                const fileData = {
-                    name: file.name,
-                    type: file.type,
-                    data: fileBlob
+                const dbName = 'myDB';
+                const dbVersion = 11;
+                const storeName = 'files';
+                
+
+                const request = window.indexedDB.open(dbName, dbVersion);
+
+                request.onupgradeneeded = (event) => {
+                    const db = event.target.result;
+                    console.log("Object store 'files' created");
+                    db.createObjectStore(storeName);
                 };
 
-                console.log(file.name, file.type);
-                store.add(fileData, file.name);
-                alert("File has been successfully uploaded!");
-                document.getElementById('file-upload').value = '';
+                request.onsuccess = () => {
+                    const db = request.result;
+                    const tx = db.transaction(storeName, 'readwrite');
+                    const store = tx.objectStore(storeName);
+                    console.log("Transaction and object store accessed successfully");
+
+                    console.log(file.name, file.type);
+                    store.add({ arrayBuffer: arrayBuffer, type: file.type, name: file.name }, file.name);
+                    alert("File has been successfully uploaded!");
+                    document.getElementById('file-upload').value = '';
+                }
             }
         } else {
             alert("No file selected for upload.");

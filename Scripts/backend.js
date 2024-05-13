@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // db variables
         const dbName = "myDB";
         const dbVersion = 11;
-        const storeName = "files"; // Assuming the object store for files is named "files"
+        const storeName = "files"; 
 
         window.indexedDB.databases().then((dbs) => {
             // Debug log line
@@ -140,20 +140,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 request.onsuccess = (event) => {
                     const db = event.target.result;
-                    const tx = db.transaction(storeName, 'readwrite');
+                    const tx = db.transaction(storeName, 'readonly');
                     const store = tx.objectStore(storeName);
 
                     const getAllRequest = store.getAll();
 
                     getAllRequest.onsuccess = () => {
                         const files = getAllRequest.result;
-
                         const fileListDiv = document.querySelector('.first-body');
 
                         files.forEach((file) => {
+                            const name = file.name;
+                            console.log(file.name);
+                            const blob = new Blob([file.arrayBuffer], { type: file.type });
+                            const url = URL.createObjectURL(blob);
                             const fileHTML = `
                 <div>
-                  <a href="#" style="font-weight: bold;" download="${file.name}">${file.name}</a> (${file.type})
+                    <a href="${url}" style="font-weight: bold;" download="${file.name}">${file.name}</a> (${file.type})
                 </div>
               `;
                             // Append the fileHTML to the fileListDiv
